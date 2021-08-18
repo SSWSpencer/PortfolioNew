@@ -1,0 +1,101 @@
+.DropdownWrapper{
+    width: 100%;
+}
+.DropdownWrapper h6{
+    color: black;
+    margin: 2% 5% 2% 0;
+    padding-bottom: 0.3%;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.DropdownTitle{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.DropdownTitle:hover{
+    cursor: pointer;
+}
+
+.DropdownTitle button{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    transition-duration: 0.5s;
+    margin-right: 2%;
+}
+
+.DropdownTitle button:hover{
+    cursor: pointer;
+    color: rgb(180, 180, 180);
+    transition-duration: 0.5s;
+}
+
+.dropdownshown{
+    animation: growDown 0.5s ease-in-out forwards;
+    transform-origin: top center;
+    padding-bottom: 2%;
+}
+@keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+.dropdownhidden{
+    display: none;
+}
+.even{
+    background: rgb(247,247,247);
+    margin: 0;
+}
+.odd{
+    margin: 0;
+}
+
+.DropdownWrapper p{
+    margin-top: 0;
+}
+.TitleHeader{
+    display: flex;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.WebBanner, .PythonBanner, .JavaBanner{
+    padding: 1%;
+}
+.WebBanner p{
+    border: 2px solid rgb(0, 179, 0);
+    color:rgb(0, 179, 0);
+}
+.PythonBanner p{
+    border: 2px solid rgb(0, 0, 179);
+    color:rgb(0, 0, 179);
+}
+.JavaBanner p{
+    border: 2px solid rgb(179, 0, 0);
+    color:rgb(179, 0, 0);
+}
+.WebBanner p, .PythonBanner p, .JavaBanner p{
+    margin-bottom: 0;
+    padding: 1px 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+@media(max-width: 600px){
+    .DropdownTitle{
+        margin-top: 5%;
+    }
+}

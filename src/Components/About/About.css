@@ -1,0 +1,11 @@
+.AboutWrapper{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.AboutWrapper hr{
+    width: 20%;
+    margin-left: 0;
+}

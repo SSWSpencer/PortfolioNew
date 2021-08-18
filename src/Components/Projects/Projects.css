@@ -1,0 +1,72 @@
+.ProjectsWrapper{
+    margin: 0 auto;
+    text-align: left;
+}
+
+.ProjectWrapper{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.ProjectText{
+    width: 60%;
+}
+
+.ProjectText a{
+    color: black;
+}
+
+.ProjectWrapper img{
+    display: block;
+    width: 25%;
+}
+
+.Technologies{
+    font-size: 1.1rem;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.ProjectLinks{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;;
+}
+
+.ProjectLink{
+    color: black;
+    display: block;
+    width: 45%;
+    text-align: center;
+    padding: 2% 0;
+    border: 1px solid black;
+    text-decoration: none;
+    background: lightgrey;
+    transition-duration: 0.5s;
+}
+
+.ProjectLink:hover{
+    background: white;
+}
+
+@media(max-width: 1024px){
+    .ProjectWrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    .ProjectText{
+        width: 80%;
+    }
+    .ProjectLinks{
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px){
+    .ProjectWrapper img{
+        width: 50%;
+    }
+}

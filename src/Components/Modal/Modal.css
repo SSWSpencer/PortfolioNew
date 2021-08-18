@@ -1,0 +1,119 @@
+.ModalWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: fadeIn;
+    animation-duration: 0.5s;
+    z-index: 2;
+}
+
+.ModalHidden{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    animation: fadeOut;
+    animation-duration: 0.5s;
+}
+
+.ModalContent{
+    position: absolute;
+    height: 60vh;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+
+.ModalTitle{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 18%;
+    margin-bottom: 0;
+    background: rgb(247, 247, 247);
+}
+.ModalTitle h4{
+    color: black;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+.ModalTitle hr{
+    width: 5%;
+    margin-left: 2%;
+    border: 1px solid black;
+    margin-bottom: 0;
+}
+
+.ModalText{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 82%;
+    overflow-y: auto;
+}
+.ModalText::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 2px 0;
+    background-color: #d4d4d4;
+  }
+  
+  .ModalText::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .ModalText::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #cccccc;
+    border: 1px solid rgb(196, 196, 196);
+  }
+
+.ModalText p{
+    color: black;
+}
+
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@media(max-width: 1024px){
+    .ModalContent{
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px){
+    .ModalContent{
+        width: 95%;
+        height: 80vh;
+    }
+}
