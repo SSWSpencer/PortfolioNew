@@ -25,7 +25,7 @@ const Nav = (props) =>{
                     <button id="ABOUT" onClick={()=>{showAbout()}}>ABOUT</button>
                     <button id="SKILLS" onClick={()=>{showSkills()}}>SKILLS</button>
                     <button id="PROJECTS" onClick={()=>{showProjects()}}>PROJECTS</button>
-                    <button id="RESUME"><a href="https://drive.google.com/file/d/1p7uDodPBPDzu7fejJSXUQh-EQthh9cfr/view?usp=sharing">RESUME</a></button>
+                    <button id="RESUME"><a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1UAItsECOpIbMmIGzkl2PH-nEbLNZShtt/view?usp=sharing">RESUME</a></button>
                 </div>
                 <div className="NavRight">
                     <a id="GITHUB" href="https://github.com/SSWSpencer"><FaGithub/></a>
@@ -40,7 +40,7 @@ const Nav = (props) =>{
                 <p id="MobileAbout" onClick={()=>{showAbout()}}>ABOUT</p>
                 <p onClick={()=>{showSkills()}} >SKILLS</p>
                 <p onClick={()=>{showProjects()}} >PROJECTS</p>
-                <a id="MobileResume" href="https://drive.google.com/file/d/1p7uDodPBPDzu7fejJSXUQh-EQthh9cfr/view?usp=sharing">RESUME</a>
+                <a id="MobileResume" target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1UAItsECOpIbMmIGzkl2PH-nEbLNZShtt/view?usp=sharing">RESUME</a>
                 <div className="MobileContact">
                     <a href="https://github.com/SSWSpencer"><FaGithub/></a>
                     <a href="https://www.linkedin.com/in/steven-sw-spencer/"><FaLinkedin/></a>
